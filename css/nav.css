@@ -1,0 +1,43 @@
+/* ===================================================
+   PT. JAFINDO INNOVATECH PERMAI
+   Responsive Navigation Styles (separate file)
+   =================================================== */
+
+/* Mobile nav close button */
+.mobile-close {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--dark-gray);
+    cursor: pointer;
+    z-index: 1003;
+}
+
+.navbar-nav.active .mobile-close {
+    display: block;
+}
+
+/* Nav CTA in mobile */
+.nav-cta-mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .nav-cta-mobile {
+        display: inline-flex;
+    }
+
+    .nav-cta-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .nav-cta-desktop {
+        display: inline-flex;
+    }
+}
